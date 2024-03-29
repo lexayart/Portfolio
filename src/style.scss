@@ -1,0 +1,45 @@
+@use './utils/colors/colors';
+@use './components/Footer/footer';
+@use './components/Contact/contact';
+@use './components/Header/header';
+@use './components/Landing/landing.scss';
+@use './components/APropos/apropos.scss';
+@use './components/Portrait/portrait.scss';
+@use './components/Projets/projets.scss';
+@use './components/CV/cv.scss';
+@use './components/Modal/modal.scss';
+@use './components/Slideshow/slideshow.scss';
+@use './pages/Error/error.scss';
+
+:root {
+  margin: 0;
+  font-family: 'Montserrat';
+  background-color: var(--first-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--fifth-color);
+  text-decoration: none;
+}
+
+body {
+  font-weight: 400;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.outline {
+  text-shadow:
+    1px 1px 0 var(--third-color),
+    -1px 1px 0 var(--third-color),
+    -1px -1px 0 var(--third-color),
+    1px -1px 0 var(--third-color);
+}
+
+.phone {
+  display: none;
+}

@@ -1,0 +1,82 @@
+.contact {
+  background-color: var(--second-color);
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 100px 140px 100px 140px;
+
+  &_caption {
+    width: 50%;
+    & h2 {
+      color: var(--third-color);
+      font-family: 'Abril Fatface';
+      font-weight: 400;
+      font-size: 90px;
+      line-height: 100px;
+      margin-bottom: 15px;
+    }
+    & p {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &_form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    align-items: flex-end;
+    & input {
+      height: 50px;
+    }
+    & textarea {
+      height: 150px;
+      padding-top: 21px;
+    }
+    &_input {
+      background-color: var(--second-color);
+      border: 2px solid var(--fifth-color);
+      margin-bottom: 24px;
+      width: 100%;
+      &::placeholder {
+        font-family: 'montserrat';
+        font-weight: 400;
+        color: var(--fifth-color);
+        opacity: 1;
+        font-size: 15px;
+        padding-left: 16px;
+        font-weight: 500;
+      }
+    }
+    & button {
+      background-color: var(--third-color);
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      height: 35px;
+      width: 250px;
+      border: none;
+      border-radius: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .contact {
+    padding: 0 20px;
+    flex-direction: column;
+    & h2 {
+      font-size: 40px;
+      line-height: 45px;
+      margin-top: 50px;
+    }
+    &_caption {
+      width: 100%;
+    }
+    &_form {
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}

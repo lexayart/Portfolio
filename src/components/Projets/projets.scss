@@ -1,0 +1,150 @@
+.projets {
+  background-color: var(--second-color);
+  padding: 75px 160px 125px 160px;
+  text-align: right;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+  grid-gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+
+  &_title {
+    font-family: 'abril fatface';
+    font-weight: 500;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: var(--second-color);
+    margin-bottom: 25px;
+    &_star {
+      height: 0.75em;
+      margin-right: 0.25em;
+    }
+  }
+
+  &_project {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    text-align: left;
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_last {
+      padding: 50px;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+
+    &_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+    &_background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 200px;
+      width: 100%;
+      background-color: var(--first-color);
+      opacity: 0;
+      transition: 500ms;
+    }
+    &_caption {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      box-sizing: border-box;
+      height: 100%;
+      padding: 45px;
+      opacity: 0;
+
+      &_title {
+        font-family: 'abril fatface';
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+      &_technos {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+        &_techno {
+          background-color: var(--third-color);
+          list-style-type: none;
+          height: 20px;
+          padding: 0 10px 0 10px;
+          display: flex;
+          align-items: center;
+          border-radius: 15px;
+          font-size: 14px;
+          font-weight: 800;
+          color: var(--first-color);
+          text-transform: uppercase;
+        }
+      }
+      &_description {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.projects_project:hover .projects_project_caption {
+  opacity: 1;
+  transition: 500ms;
+}
+
+.projects_project:hover .projects_project_background {
+  opacity: 0.85;
+  transition: 500ms;
+}
+
+@media screen and (max-width: 765px) {
+  .projets {
+    padding: 150px 25px 100px 25px;
+    & .outline {
+      text-shadow: none;
+    }
+  }
+  .projects {
+    display: block;
+    &_title {
+      color: var(--third-color);
+      font-size: 40px;
+      line-height: 50px;
+    }
+    &_project {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      margin-bottom: 15px;
+      background-color: var(--first-color);
+      &_background {
+        display: none;
+      }
+      &_img {
+        width: 100%;
+        height: 200px;
+      }
+      &_caption {
+        position: relative;
+        opacity: 1;
+        margin-bottom: 1px;
+        padding: 15px 15px 20px 15px;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  &_title {
+    font-family: 'abril fatface';
+    font-size: 300px;
+    color: var(--third-color);
+    font-weight: 400;
+  }
+  &_link {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+}

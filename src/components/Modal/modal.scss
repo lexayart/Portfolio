@@ -1,0 +1,120 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+  color: black;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+.overlay {
+  background: rgba(black, 0.8);
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  width: 80%;
+  background-color: var(--first-color);
+  z-index: 10000;
+  padding: 75px 50px 75px 50px;
+  box-sizing: border-box;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  transform: rotate(45deg);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.modal_header {
+  display: flex;
+  align-items: center;
+}
+
+.modal_title {
+  font-family: 'abril fatface';
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.modal_github {
+  background-color: var(--first-color);
+  border: 1px solid var(--third-color);
+  font-size: 16px;
+  padding: 5px 15px 5px 15px;
+  height: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+  margin-left: 20px;
+  color: var(--third-color);
+  transition: 200ms;
+
+  &:hover {
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+    transition: 200ms;
+  }
+}
+.modal_techno_list {
+  display: flex;
+}
+.modal_techno {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 15px;
+  padding: 5px 20px 5px 20px;
+  background-color: var(--third-color);
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.modal_description {
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.modal_img_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 15px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--third-color) var(--first-color);
+  scroll-behavior: smooth;
+}
+
+.modal_img {
+  width: 450px;
+}

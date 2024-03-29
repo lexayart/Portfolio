@@ -1,0 +1,304 @@
+.transition-star {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.col1 {
+  width: calc(50% - 100px);
+  padding: 0 50% 0 100px;
+}
+
+.cv {
+  position: relative;
+  width: 100%;
+
+  & h2 {
+    font-family: 'abril fatface';
+    font-size: 90px;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--first-color);
+    padding-top: 125px;
+    padding-right: 50%;
+
+    & img {
+      height: 65px;
+    }
+  }
+  &_subtitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--fourth-color);
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+  &_uppercase {
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  &_text {
+    font-size: 16px;
+    font-weight: 400;
+    list-style-type: none;
+  }
+  &_tag {
+    height: 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px 10px 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &_technical {
+    display: flex;
+    &_column {
+      width: 50%;
+    }
+    &_softwares {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      & div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+      }
+      &_one {
+        max-width: 65px;
+        height: 55px;
+      }
+    }
+    &_prog {
+      display: flex;
+      gap: 50px;
+    }
+  }
+
+  &_qualities {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 75px;
+    margin-top: 50px;
+  }
+
+  &_quality {
+    background-color: var(--second-color);
+  }
+
+  &_blanc {
+    background-color: var(--fifth-color);
+    padding-top: 5px;
+    padding-bottom: 90px;
+    & h3 {
+      color: var(--first-color);
+    }
+    & h4 {
+      color: var(--second-color);
+    }
+    & .cv_text {
+      color: var(--first-color);
+    }
+  }
+
+  &_langage-container {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: 3px solid var(--third-color);
+    border-radius: 20px;
+  }
+  &_langage {
+    background-color: var(--third-color);
+    box-sizing: border-box;
+    height: 32px;
+  }
+  &_french {
+    width: 100%;
+  }
+  &_english {
+    width: 80%;
+  }
+  &_german {
+    width: 30%;
+  }
+
+  &_interests {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_interest {
+    width: 100px;
+  }
+  &_icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--third-color);
+    & img {
+      max-height: 60px;
+      max-width: 60px;
+    }
+  }
+}
+
+.parcours {
+  width: calc(45% - 100px);
+  position: absolute;
+  left: 55%;
+  top: 40px;
+
+  &_experiences {
+    background-color: var(--third-color);
+    padding: 1px 50px 45px 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+    & h3 {
+      color: var(--first-color);
+    }
+    & .cv_uppercase {
+      color: var(--first-color);
+    }
+    & .cv_text {
+      color: var(--first-color);
+    }
+  }
+  &_orange-star {
+    height: 1em;
+    margin-right: 15px;
+  }
+  &_border {
+    padding-left: 22px;
+    padding-bottom: 10px;
+    margin: 5px 0 5px 7px;
+    border-left: 2px solid var(--fifth-color);
+    &_green {
+      border-left: 2px solid var(--first-color);
+    }
+  }
+  &_divers .cv_text,
+  &_divers .cv_uppercase {
+    color: var(--first-color);
+  }
+}
+
+.formations,
+.parcours_divers {
+  margin-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 765px) {
+  .col1 {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .cv {
+    &_uppercase {
+      margin-bottom: 10px;
+    }
+    &_subtitle {
+      padding: 0 20px;
+    }
+    & .outline {
+      text-shadow: none;
+      padding-top: 100px;
+    }
+    & h2 {
+      font-size: 40px;
+      line-height: 45px;
+      color: var(--third-color);
+      width: 100%;
+      box-sizing: border-box;
+      & img {
+        height: 35px;
+      }
+    }
+    &_technical {
+      padding: 0 20px;
+      gap: 30px;
+      flex-direction: column;
+    }
+
+    &_qualities {
+      padding: 0 20px;
+    }
+
+    &_blanc {
+      padding-top: 0;
+      padding-bottom: 30px;
+      box-sizing: border-box;
+      background-color: var(--first-color);
+      & .cv_subtitle {
+        color: var(--fifth-color);
+      }
+      & .cv_uppercase {
+        color: var(--fifth-color);
+      }
+      & .cv_text {
+        color: var(--fifth-color);
+      }
+    }
+
+    &_interests {
+      flex-direction: column;
+    }
+    &_interest {
+      display: flex;
+      width: 100%;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    &_icon {
+      height: 50px;
+      width: 50px;
+      & img {
+        max-width: 30px;
+        max-height: 30px;
+      }
+    }
+  }
+  .formations {
+    padding-top: 5px;
+    margin-bottom: 30px;
+    & .cv_uppercase {
+      color: var(--first-color);
+    }
+    & .cv_text {
+      color: var(--first-color);
+    }
+    & .parcours_border {
+      border-left: 2px solid var(--first-color);
+    }
+  }
+  .parcours {
+    background-color: var(--fifth-color);
+    width: 100%;
+    position: relative;
+    padding: 0;
+    left: 0;
+    &_experiences {
+      border-radius: 0;
+      margin: 0 20px;
+    }
+    &_divers {
+      padding-top: -10px;
+      padding-bottom: 50px;
+    }
+  }
+}

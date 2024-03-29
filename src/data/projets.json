@@ -1,0 +1,61 @@
+[
+  {
+    "id": "vieuxgrim",
+    "title": "Mon vieux grimoire",
+    "cover": "./assets/img/mon_vieux_grimoire/accueil.png",
+    "github": "https://github.com/lexayart/Mon-Vieux-Grimoire",
+    "pictures": [
+      "./assets/img/mon_vieux_grimoire/accueil.png",
+      "./assets/img/mon_vieux_grimoire/ajout-livre.png",
+      "./assets/img/mon_vieux_grimoire/signup.png",
+      "./assets/img/mon_vieux_grimoire/single-livre.png",
+      "./assets/img/mon_vieux_grimoire/livres-recommandes.png",
+      "./assets/img/mon_vieux_grimoire/success-ajout.png"
+    ],
+    "technos": ["NodeJS", "MangoDB", "Express"],
+    "description": "Site de notation de livres pour une librairie de centre-ville."
+  },
+  {
+    "id": "portfolio",
+    "title": "Portfolio",
+    "cover": "./assets/img/Portfolio/1landing.png",
+    "github": "https://github.com/lexayart/Portfolio",
+    "pictures": [
+      "./assets/img/Portfolio/1landing.png",
+      "./assets/img/Portfolio/2APropos.png",
+      "./assets/img/Portfolio/3projets.png",
+      "./assets/img/Portfolio/4cv1.png",
+      "./assets/img/Portfolio/5cv2.png",
+      "./assets/img/Portfolio/6contact.png"
+    ],
+    "technos": ["React", "JavaScript", "Sass"],
+    "description": "Site portfolio pour présenter mon travail."
+  },
+  {
+    "id": "kasa",
+    "title": "Kasa",
+    "github": "https://github.com/lexayart/kasa",
+    "cover": "./assets/img/kasa/1accueil.png",
+    "pictures": [
+      "./assets/img/kasa/1accueil.png",
+      "./assets/img/kasa/2ficheLogement.png",
+      "./assets/img/kasa/values.png",
+      "./assets/img/kasa/404.png"
+    ],
+    "technos": ["React", "JavaScript", "Sass"],
+    "description": "Site de de location d'appartement pour une agence immobilière."
+  },
+  {
+    "id": "booki",
+    "title": "Booki",
+    "github": "https://github.com/lexayart/booki",
+    "cover": "./assets/img/booki/1accueil.png",
+    "pictures": [
+      "./assets/img/booki/1accueil.png",
+      "./assets/img/booki/2hebergements.png",
+      "./assets/img/booki/3activites.png"
+    ],
+    "technos": ["HTML", "CSS"],
+    "description": "Site d'une agence de voyage."
+  }
+]
