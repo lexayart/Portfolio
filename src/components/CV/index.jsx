@@ -229,7 +229,7 @@ function Cv() {
                 alt="étoile"
                 className="parcours_orange-star"
               />
-              2023-2023
+              2022-2023
             </h4>
             <div className="parcours_border">
               <p className="cv_text">Vendeuse au rayon cuisine</p>
