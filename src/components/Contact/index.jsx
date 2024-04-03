@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import arrow from './../../assets/img/arrow.png'
 
 function Contact() {
   const form = useRef()
@@ -25,7 +26,7 @@ function Contact() {
   return (
     <div id="contact" className="contact">
       <div className="contact_caption">
-        <h2>Et si on se rencontrait ?</h2>
+        <h2>Et si on se rencontrait&nbsp;?</h2>
         <p>
           Que ce soit pour un emploi, un projet ou autre, n’hésitez pas à
           m’envoyer un message pour en parler !
@@ -61,7 +62,10 @@ function Contact() {
           name="message"
           placeholder="Votre message"
         ></textarea>
-        <button type="submit">Envoyer</button>
+        <button type="submit">
+          <p>Envoyer</p>
+          <img src={arrow} alt="flèche" />
+        </button>
       </form>
     </div>
   )

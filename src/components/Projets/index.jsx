@@ -60,8 +60,9 @@ function Projets() {
               description={projet.description}
               technos={projet.technos}
               github={projet.github}
-              toggleModal={() => toggleModal(projet.id)} // Pass project id to toggleModal
-              modal={modalStates[projet.id]} // Use modal state for the specific project
+              toggleModal={() => toggleModal(projet.id)}
+              modal={modalStates[projet.id]}
+              problematics={projet.problematics}
             />
           </div>
         ))}

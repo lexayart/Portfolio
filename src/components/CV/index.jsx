@@ -120,7 +120,7 @@ function Cv() {
                 <div className="cv_icon">
                   <img src={art} alt="icone de peinture" />
                 </div>
-                <div>
+                <div className="cv_interest_caption">
                   <h4 className="cv_uppercase">L'art</h4>
                   <p className="cv_text">(peinture, sculpture, musique)</p>
                 </div>
@@ -129,7 +129,7 @@ function Cv() {
                 <div className="cv_icon">
                   <img src={music} alt="icone de musique" />
                 </div>
-                <div>
+                <div className="cv_interest_caption">
                   <h4 className="cv_uppercase">La musique</h4>
                   <p className="cv_text">(rock, pop, techno)</p>
                 </div>
@@ -138,7 +138,7 @@ function Cv() {
                 <div className="cv_icon">
                   <img src={crochet} alt="icone de chrochet" />
                 </div>
-                <div>
+                <div className="cv_interest_caption">
                   <h4 className="cv_uppercase">Le crochet</h4>
                   <p className="cv_text">
                     (vêtements, accessoires, décoration)
@@ -149,7 +149,7 @@ function Cv() {
                 <div className="cv_icon">
                   <img src={games} alt="icone de console" />
                 </div>
-                <div>
+                <div className="cv_interest_caption">
                   <h4 className="cv_uppercase">Les jeux vidéo</h4>
                   <p className="cv_text">(narratifs, aventure, casse-tête)</p>
                 </div>
@@ -158,7 +158,7 @@ function Cv() {
                 <div className="cv_icon">
                   <img src={book} alt="icone de livre" />
                 </div>
-                <div>
+                <div className="cv_interest_caption">
                   <h4 className="cv_uppercase">La lecture</h4>
                   <p className="cv_text">
                     (fantasy, dystopie, mangas d’horreur)

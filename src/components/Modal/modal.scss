@@ -32,7 +32,6 @@ body.active-modal {
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background: #f1f1f1;
-  padding: 14px 28px;
   border-radius: 3px;
   width: 80%;
   background-color: var(--first-color);
@@ -117,4 +116,33 @@ body.active-modal {
 
 .modal_img {
   width: 450px;
+}
+
+@media screen and (max-width: 765px) {
+  .modal {
+    &-content {
+      padding: 50px 25px 50px 25px;
+    }
+    &_github {
+      font-size: 14px;
+      height: 25px;
+      margin-left: 15px;
+    }
+    &_techno {
+      height: 25px;
+      margin: 0;
+      color: var(--first-color);
+      font-weight: 500;
+      &_list {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+        row-gap: 12px;
+        column-gap: 10px;
+      }
+    }
+    &_img {
+      width: 100%;
+    }
+  }
 }

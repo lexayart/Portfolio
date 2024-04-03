@@ -8,6 +8,7 @@ function Modal({
   github,
   toggleModal,
   modal,
+  problematics,
 }) {
   const handleCloseModal = (e) => {
     e.stopPropagation() // Prevent event propagation to parent elements
@@ -22,7 +23,12 @@ function Modal({
             <div className="modal_header">
               <h3 className="modal_title">{title}</h3>
 
-              <a href={github} className="modal_github" target="blank_">
+              <a
+                href={github}
+                className="modal_github"
+                target="blank_"
+                rel="noreferrer"
+              >
                 Github
               </a>
             </div>
@@ -35,6 +41,7 @@ function Modal({
               ))}
             </ul>
             <p className="modal_description">{description}</p>
+            <p className="modal_description">{problematics}</p>
             <img
               src={whiteStar}
               alt="croix pour quitter la modale"

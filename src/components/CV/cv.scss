@@ -41,6 +41,7 @@
     display: flex;
     align-items: center;
     text-transform: uppercase;
+    margin-bottom: 10px;
   }
   &_text {
     font-size: 16px;
@@ -131,7 +132,7 @@
     width: 80%;
   }
   &_german {
-    width: 30%;
+    width: 35%;
   }
 
   &_interests {
@@ -139,11 +140,17 @@
     justify-content: space-between;
   }
   &_interest {
-    width: 100px;
+    width: 90px;
+    & .cv_uppercase,
+    & .cv_text {
+      text-align: center;
+    }
   }
   &_icon {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -201,11 +208,78 @@
   margin-left: 50px;
   padding-right: 50px;
 }
+.formations {
+  background-color: var(--first-color);
+}
+
+@media only screen and (min-width: 766px) and (max-width: 1024px) {
+  col1 {
+    width: calc(50% - 10%);
+    padding: 0 50% 0 10%;
+  }
+
+  .cv {
+    & h2 {
+      font-size: 75px;
+      & img {
+        display: none;
+      }
+    }
+    &_tag {
+      height: fit-content;
+    }
+    &_technical {
+      flex-direction: column;
+      gap: 25px;
+    }
+    &_interests {
+      flex-direction: column;
+    }
+    &_interest {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      &_caption {
+        width: calc(100% - 60px);
+      }
+      & .cv_uppercase,
+      & .cv_text {
+        text-align: left;
+      }
+    }
+    &_icon {
+      height: 60px;
+      width: 60px;
+      padding: 10px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+      & img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+    }
+  }
+
+  .parcours {
+    width: calc(45% - 7%);
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    &_experiences {
+      padding: 1px 35px 35px 35px;
+      border-radius: 15px;
+      & h3 {
+        margin-top: 35px;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 765px) {
   .col1 {
     width: 100%;
     padding: 0 20px;
+    box-sizing: border-box;
   }
   .cv {
     &_uppercase {
@@ -236,6 +310,7 @@
 
     &_qualities {
       padding: 0 20px;
+      box-sizing: border-box;
     }
 
     &_blanc {
@@ -300,5 +375,8 @@
       padding-top: -10px;
       padding-bottom: 50px;
     }
+  }
+  .formations {
+    background-color: var(--fifth-color);
   }
 }

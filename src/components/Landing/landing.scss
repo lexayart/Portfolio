@@ -2,21 +2,33 @@
   z-index: 1;
   position: relative;
   padding-top: 100px;
-  padding-right: 160px;
-  padding-left: 160px;
   height: 100vh;
   box-sizing: border-box;
   &_portfolio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+
+    & .filled {
+      z-index: 99999;
+      position: relative;
+    }
     &_lines {
+      position: relative;
+      text-align: center;
       text-transform: uppercase;
       font-family: 'abril fatface';
-      font-size: 200px;
+      font-size: 13vw;
+      line-height: 13vw;
       font-weight: 400;
       color: var(--third-color);
-      line-height: 160px;
     }
     & .outline {
       color: var(--first-color);
+      position: relative;
+      z-index: 3;
     }
     &_outline {
       color: var(--first-color);
@@ -28,10 +40,11 @@
     }
   }
   &_img {
+    z-index: 4;
     position: absolute;
     bottom: 50px;
     right: 160px;
-    height: 475px;
+    height: 70%;
   }
   &_links {
     height: 250px;
@@ -44,7 +57,7 @@
     justify-content: space-between;
     position: absolute;
     bottom: 135px;
-    font-size: 17px;
+    left: 160px;
   }
 }
 
@@ -64,21 +77,50 @@
   transform: translate(-50%, 50%);
 }
 
-@media screen and (max-width: 765px) {
+@media only screen and (min-width: 766px) and (max-width: 1023px) {
+  .landing {
+    padding-left: 10%;
+    padding-right: 10%;
+    &_portfolio {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &_lines {
+        text-align: center;
+      }
+      & .phone {
+        display: block;
+      }
+    }
+    &_img {
+      top: 30%;
+      right: 0;
+    }
+    &_links {
+      width: fit-content;
+      top: 63%;
+      left: 0;
+      padding-left: 10%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media only screen and (max-width: 765px) {
   .landing {
     padding: 150px 0 0 0;
     &_portfolio {
       &_lines {
         text-align: center;
-        font-size: 60px;
-        line-height: 60px;
       }
     }
     & .phone {
       display: block;
     }
     &_img {
-      right: -50px;
+      width: -calc(width - 50px);
+      right: 0;
       top: 250px;
       height: 375px;
     }

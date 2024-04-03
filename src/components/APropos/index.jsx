@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom'
 import Portrait from '../Portrait'
 import pinkStar from './../../assets/img/pinkStar.png'
+import arrow from './../../assets/img/arrow.png'
 
 function APropos() {
   return (
     <div id="a-propos" className="a-propos">
       <div className="a-propos_content">
         <h2 className="a-propos_content_title">
-          Salut !{' '}
+          Salut&nbsp;!{' '}
           <img
             src={pinkStar}
             alt="étoile rose"
@@ -26,12 +26,15 @@ function APropos() {
           C’est donc tout naturellement que j’ai fini par faire une formation
           pour m’y former et devenir développeuse web.
         </p>
-        <Link
-          to={{ pathname: 'www.linkedin.com/in/axelle-roche-63b660154' }}
+        <a
+          href="https://www.linkedin.com/in/axelle-roche-63b660154/"
+          className="a-propos_content_link"
           target="_blank"
+          rel="noreferrer"
         >
-          <p className="a-propos_content_link">Retrouvez-moi sur LinkedIn</p>
-        </Link>
+          <p>Retrouvez-moi sur LinkedIn</p>
+          <img src={arrow} alt="flèche" />
+        </a>
       </div>
       <Portrait />
     </div>

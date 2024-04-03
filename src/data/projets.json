@@ -13,7 +13,8 @@
       "./assets/img/mon_vieux_grimoire/success-ajout.png"
     ],
     "technos": ["NodeJS", "MangoDB", "Express"],
-    "description": "Site de notation de livres pour une librairie de centre-ville."
+    "description": "Site de notation de livres pour une librairie de centre-ville.",
+    "problematics": "Ce fut ma première approche autour du backend et le plus dur mour moi aura été l'optimisation des images. En effet, j'utilise Multer pour récupérer et sauvegarder les images et Sharp pour les optimiser dans une optique de Green IT. Il m'a été compliqué de les combiner mais j'ai finalement réglé le soucis en utilisant Multer en middleware et Sharp en fonction."
   },
   {
     "id": "portfolio",
@@ -29,7 +30,8 @@
       "./assets/img/Portfolio/6contact.png"
     ],
     "technos": ["React", "JavaScript", "Sass"],
-    "description": "Site portfolio pour présenter mon travail."
+    "description": "Site portfolio pour présenter mon travail.",
+    "problematics": "Pour ce site j'ai du d'abord réaliser ma propre identité visuelle, ce qui n'est pas toujours évident, afin de pouvoir me vendre auprès des entreprises par la suite. La partie mise en page et responsive du site en Sass a été la partie la plus challengeante à bien des égards. Malgré tout, à force de tests et de patience, j'ai réussi à créer ce que je voulais et à l'adapter sur les différents supports."
   },
   {
     "id": "kasa",
@@ -43,7 +45,8 @@
       "./assets/img/kasa/404.png"
     ],
     "technos": ["React", "JavaScript", "Sass"],
-    "description": "Site de de location d'appartement pour une agence immobilière."
+    "description": "Site de de location d'appartement pour une agence immobilière.",
+    "problematics": "Avec ce site, j'ai découvert React et s'il m'a fallu un peu de temps pour m'y adapter entièrement, j'ai cependant buté sur les animations CSS des collapses qu'on peut retrouver à divers endroits. Finalement, avec un peu de JS, je suis arrivée à mes fins et à animer le tout comme il faut. Le slideshow de la page 'fiche logement' m'a également donné du fil à retordre, avant de comprendre que le state que j'avais mis en place était asynchrone."
   },
   {
     "id": "booki",
@@ -56,6 +59,7 @@
       "./assets/img/booki/3activites.png"
     ],
     "technos": ["HTML", "CSS"],
-    "description": "Site d'une agence de voyage."
+    "description": "Site d'une agence de voyage.",
+    "problematics": "Ce fut le premier site que j'ai développé dans le cadre de ma formation chez OpenClassrooms. Ayant des connaissances de base sur HTML et CSS de part mes études, je n'ai pas eu trop de difficultés au niveau technique. En revanche, j'y ai découvert Git et Github qui m'ont pris un peu de temps à prendre en main au début. Enfin, j'ai développé une vraie méthode de travail qui me sert encore maintenant."
   }
 ]

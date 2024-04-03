@@ -5,21 +5,21 @@ function Landing() {
   return (
     <div id="landing" className="landing">
       <div className="landing_portfolio">
-        <h2 className="landing_portfolio_lines">Portfolio</h2>
+        <h2 className="landing_portfolio_lines filled">Portfolio</h2>
         <p className="landing_portfolio_lines outline">Portfolio</p>
         <p className="landing_portfolio_lines outline">Portfolio</p>
         <p className="landing_portfolio_lines outline phone">Portfolio</p>
         <p className="landing_portfolio_lines outline phone">Portfolio</p>
         <p className="landing_portfolio_lines outline phone">Portfolio</p>
+        <img src={photo1} alt="Portait de moi" className="landing_img" />
       </div>
-      <img src={photo1} alt="Portait de moi" className="landing_img" />
       <div className="landing_links">
         <p>
           Github : <Link to="https://github.com/lexayart">lexayart</Link>
         </p>
         <p>
           LinkedIn :{' '}
-          <Link to="www.linkedin.com/in/axelle-roche-63b660154">
+          <Link to="https://www.linkedin.com/in/axelle-roche-63b660154/">
             Axelle Roche
           </Link>
         </p>
