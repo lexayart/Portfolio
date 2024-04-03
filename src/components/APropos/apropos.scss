@@ -55,6 +55,9 @@
     &_content {
       width: 40%;
       box-sizing: border-box;
+      &_link {
+        height: fit-content;
+      }
     }
   }
 }
@@ -77,6 +80,7 @@
         width: 100%;
         box-sizing: border-box;
         font-size: 18px;
+        height: fit-content;
       }
     }
   }
