@@ -85,7 +85,6 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
       &_lines {
         text-align: center;
       }
@@ -111,6 +110,7 @@
   .landing {
     padding: 150px 0 0 0;
     &_portfolio {
+      transform: translate(-50%, -60%);
       &_lines {
         text-align: center;
       }
@@ -121,13 +121,14 @@
     &_img {
       width: -calc(width - 50px);
       right: 0;
-      top: 250px;
+      bottom: -50px;
       height: 375px;
     }
     &_links {
       font-size: 14px;
-      bottom: 115px;
+      bottom: 50px;
       left: 20px;
+      width: 55%;
     }
   }
 }

@@ -46,9 +46,7 @@
       font-weight: 500;
       padding-left: 16px;
       padding-right: 16px;
-      &:active {
-        border: 2px solid var(--third-color);
-      }
+      box-sizing: border-box;
       &::placeholder {
         font-family: 'montserrat';
         color: var(--fifth-color);

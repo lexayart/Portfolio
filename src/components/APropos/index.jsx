@@ -17,10 +17,9 @@ function APropos() {
           Moi c'est Axelle
         </h2>
         <p className="a-propos_content_text">
-          Je viens de Normandie et ma passion c’est le saucisson. J’ai fait un
-          master 2 en design corporate à l’ECV Nantes, C’est là-bas que j’ai
-          découvert le développement web pour lequel j’ai développé une vraie
-          passion.
+          Originaire de Normandie, j’ai fait un master 2 en design corporate à
+          l’ECV Nantes, C’est là-bas que j’ai découvert le développement web
+          pour lequel j’ai développé une vraie passion.
         </p>
         <p className="a-propos_content_text">
           C’est donc tout naturellement que j’ai fini par faire une formation
